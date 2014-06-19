@@ -2,8 +2,8 @@ var User = require('../Models/User');
 
 exports.getLogin = function(req, res) {
     User.findOne({
-        firstName: req.param.firstName,
-        passWord: req.param.passWord
+        userName: req.param('userName'),
+        passWord: req.param('passWord')
 
 
     }, function(err, user) {

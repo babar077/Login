@@ -28,8 +28,8 @@ app.use('/', routes);
 app.use('/users', users);
 
 // routes
-app.get('/signup/:firstName/:passWord/:age/:sex/:emailAddress/:location/:isAdmin',user.addUser);
-app.get('/login/:firstName/:passWord',login.getLogin);
+app.get('/signup/:userName/:passWord/:age/:sex/:emailAddress/:location/:isAdmin',user.addUser);
+app.get('/login/:userName/:passWord',login.getLogin);
 
 
 
